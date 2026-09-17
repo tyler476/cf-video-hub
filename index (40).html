@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Citizens Financial | Program Videos</title>
+<meta name="description" content="Short videos on every loan program Citizens Financial offers, from DSCR rentals and fix and flip to first-time buyer financing.">
+<meta property="og:title" content="Citizens Financial | Program Videos">
+<meta property="og:description" content="Short videos on every program we offer. Watch, then book a call.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111A24;
+  --paper:#FFFFFF;
+  --mist:#F2F4F7;
+  --rule:#D9DEE6;
+  --accent:#17479E;
+  --muted:#5A6572;
+  --sans:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --wrap:1080px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#EAEEF4; --paper:#0E141B; --mist:#18202A;
+    --rule:#2B3542; --accent:#7FA6EE; --muted:#9BA7B6;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#EAEEF4; --paper:#0E141B; --mist:#18202A;
+  --rule:#2B3542; --accent:#7FA6EE; --muted:#9BA7B6;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:17px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img,video{max-width:100%; display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+@media (prefers-reduced-motion: reduce){*{transition:none !important; animation:none !important}}
+
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 24px}
+
+.masthead{border-bottom:1px solid var(--rule)}
+.masthead .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; height:68px}
+.mark{font-weight:700; font-size:17px; letter-spacing:-.01em; text-decoration:none}
+.mark span{color:var(--muted); font-weight:500}
+.mast-right{display:flex; align-items:center; gap:22px; font-size:15px}
+.mast-right a{text-decoration:none; color:var(--muted)}
+.mast-right a:hover{color:var(--ink)}
+.mast-right .btn-sm{color:var(--paper); background:var(--accent); padding:9px 16px; border-radius:4px; font-weight:600}
+.mast-right .btn-sm:hover{color:var(--paper); filter:brightness(1.1)}
+@media (max-width:640px){ .mast-tel{display:none} }
+
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(34px,5.4vw,52px); line-height:1.06; letter-spacing:-.025em; font-weight:700; margin:0 0 14px; max-width:15ch}
+.hero p{font-family:var(--serif); font-size:19px; line-height:1.55; color:var(--muted); margin:0; max-width:54ch}
+
+.stage{display:grid; grid-template-columns:1.65fr 1fr; gap:40px; align-items:start; padding-bottom:56px}
+@media (max-width:860px){ .stage{grid-template-columns:1fr; gap:28px} }
+
+.frame{position:relative; aspect-ratio:16/9; background:#000; border:1px solid var(--rule); border-radius:6px; overflow:hidden}
+.frame iframe,.frame video{position:absolute; inset:0; width:100%; height:100%; border:0; object-fit:cover}
+.empty{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; padding:28px; gap:10px; background:var(--mist)}
+.empty strong{font-size:16px; font-weight:600}
+.empty span{font-family:var(--serif); font-size:15px; color:var(--muted); max-width:34ch}
+
+.detail h2{font-size:27px; line-height:1.15; letter-spacing:-.02em; margin:0 0 12px; font-weight:700}
+.detail .blurb{font-family:var(--serif); font-size:17px; line-height:1.6; color:var(--muted); margin:0 0 22px}
+.facts{list-style:none; margin:0 0 26px; padding:0; border-top:1px solid var(--rule)}
+.facts li{display:flex; justify-content:space-between; gap:18px; padding:11px 0; border-bottom:1px solid var(--rule); font-size:15px}
+.facts .k{color:var(--muted)}
+.facts .v{font-weight:600; text-align:right}
+.btn{display:inline-block; background:var(--accent); color:var(--paper); text-decoration:none;
+  font-weight:600; font-size:16px; padding:14px 26px; border-radius:4px}
+.btn:hover{filter:brightness(1.1)}
+.btn-note{font-size:14px; color:var(--muted); margin:12px 0 0}
+
+.library{border-top:1px solid var(--rule); padding:44px 0 8px}
+.lib-head{font-size:15px; font-weight:600; margin:0 0 4px}
+.lib-sub{font-family:var(--serif); font-size:15px; color:var(--muted); margin:0 0 20px}
+.rows{list-style:none; margin:0 0 42px; padding:0; border-top:1px solid var(--rule)}
+.rows li{border-bottom:1px solid var(--rule)}
+.row{width:100%; display:grid; grid-template-columns:20px 1fr auto; gap:18px; align-items:baseline;
+  background:none; border:0; text-align:left; font:inherit; color:inherit; padding:16px 8px 16px 0; cursor:pointer}
+.row:hover{background:var(--mist)}
+.row .tick{width:3px; height:15px; border-radius:2px; background:transparent; justify-self:start; transform:translateY(2px)}
+.row[aria-current="true"] .tick{background:var(--accent)}
+.row[aria-current="true"] .title{color:var(--accent)}
+.row .title{font-weight:600; font-size:17px; letter-spacing:-.01em}
+.row .sub{font-family:var(--serif); font-size:15px; color:var(--muted); margin-top:2px}
+.row .len{font-size:14px; color:var(--muted); white-space:nowrap}
+.row.pending .title,.row.pending .sub{color:var(--muted)}
+.row .soon{font-size:13px; color:var(--muted); white-space:nowrap}
+@media (max-width:560px){ .row{grid-template-columns:14px 1fr; gap:12px} .row .len,.row .soon{display:none} }
+
+.close{border-top:1px solid var(--rule); background:var(--mist)}
+.close .wrap{padding-top:48px; padding-bottom:48px}
+.close h2{font-size:clamp(24px,3.4vw,32px); letter-spacing:-.02em; margin:0 0 10px; max-width:22ch}
+.close p{font-family:var(--serif); font-size:17px; color:var(--muted); margin:0 0 24px; max-width:52ch}
+
+footer{border-top:1px solid var(--rule); padding:36px 0 52px; font-size:14px; color:var(--muted)}
+.foot-top{display:flex; flex-wrap:wrap; gap:8px 26px; margin-bottom:22px}
+.foot-top a{text-decoration:none}
+.foot-top a:hover{color:var(--ink)}
+.legal{font-size:12.5px; line-height:1.6; max-width:84ch}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="./">Citizens Financial <span>Program Videos</span></a>
+    <div class="mast-right">
+      <a class="mast-tel" href="tel:7078006047">707.800.6047</a>
+      <a class="btn-sm" id="navBook" href="#">Book a call</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>See how the loan actually works</h1>
+    <p>Short videos on every program we offer, from DSCR rentals and fix and flip to first-time buyer financing. Watch the one that fits your deal, then book a call.</p>
+  </div>
+</section>
+
+<section class="wrap stage" id="stage">
+  <div class="frame" id="frame"></div>
+  <div class="detail">
+    <h2 id="vTitle"></h2>
+    <p class="blurb" id="vBlurb"></p>
+    <ul class="facts" id="vFacts"></ul>
+    <a class="btn" id="vBook" href="#">Book a call</a>
+    <p class="btn-note">30 minutes, no application required.</p>
+  </div>
+</section>
+
+<section class="library">
+  <div class="wrap"><div id="lib"></div></div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <h2>Our goal is to close more deals so you can open more doors.</h2>
+    <p>First rental or fortieth flip, first house or a refinance, we will walk the options together and find the structure that fits.</p>
+    <a class="btn" id="closeBook" href="#">Book a call</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="https://www.citizensfinancial.co">citizensfinancial.co</a>
+      <a href="tel:7078006047">707.800.6047</a>
+      <a href="mailto:info@citizensfinancial.co">info@citizensfinancial.co</a>
+      <span>Vacaville, Fairfield, Long Beach</span>
+    </div>
+    <p class="legal">
+      Citizens Financial, NMLS #2503947, CA DRE License #01746163. Equal Housing Lender.
+      dba The Badges Broker, Citizens Financial Home Services, Adobe Mortgage.
+      Not a commitment to lend. Investor programs shown are business-purpose investment loans
+      and are not for owner-occupied primary residences unless noted. Program guidelines,
+      rates, and terms are subject to change without notice.
+    </p>
+  </div>
+</footer>
+
+<script>
+/* =========================================================================
+   EDIT HERE.
+
+   Each video takes ONE source:
+     mp4:   "videos/dscr.mp4"      <- self-hosted file, sits next to index.html
+     vimeo: "123456789"            <- Vimeo ID
+
+   A video with no source still shows in the library, greyed out and marked
+   "Coming soon", and its player shows a fallback with the phone number.
+   To hide it instead, delete the block.
+
+   `group` must match a GROUPS id below: "investors" or "homebuyers".
+   ========================================================================= */
+var BOOKING_URL = "https://citizensclienthub-crm.vercel.app/?book=1&g=greg";
+
+var GROUPS = [
+  { id:"investors",  head:"For investors",  sub:"Business-purpose financing for rentals, flips, and portfolios." },
+  { id:"homebuyers", head:"For homebuyers", sub:"Purchase and refinance programs for a primary residence." }
+];
+
+var VIDEOS = [
+  /* ---------------- investors ---------------- */
+  {
+    slug:"investor-overview", group:"investors", featured:true,
+    title:"Working with investors",
+    short:"How we fund rentals, flips, and portfolios",
+    length:"0:15",
+    mp4:"videos/investor-overview.mp4",
+    vimeo:null, poster:null,
+    blurb:"A walkthrough of the investor bench: DSCR, bank statement, fix and flip, and portfolio options, matched to the deal instead of forced into one lender's box.",
+    facts:[["Tax returns required","0 on most programs"],["Top-end loan amount","$5M"],["Properties per blanket loan","Up to 10"]]
+  },
+  { slug:"dscr", group:"investors", title:"DSCR rental loans", short:"The property qualifies, not you",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"Qualify a rental on the income it generates instead of personal income, tax returns, or employment. Purchase, rate and term, and cash-out available, with LLC vesting accepted.",
+    facts:[["Minimum DSCR","0.75"],["Maximum LTV","85%"],["Maximum loan amount","$3M"]] },
+
+  { slug:"bank-statement", group:"investors", title:"Bank statement and P&L", short:"No tax returns, ever",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"For self-employed investors, gig workers, and business owners whose tax returns undersell their real cash flow. Qualify on 12 to 24 months of deposits or a CPA-prepared P&L.",
+    facts:[["Deposit history","12 to 24 months"],["Tax returns","None"],["Loan amounts","Up to $5M"]] },
+
+  { slug:"fix-and-flip", group:"investors", title:"Fix and flip", short:"Rehab funded on draws, two ways out",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"Lending on as-repaired value with rehab funds included and interest-only terms. Funds release as work passes inspection. Sell for the profit, or refinance into a 30-year DSCR loan and keep it as a rental.",
+    facts:[["Loan to cost","90%"],["After-repair value","75%"],["Maximum loan amount","$2M"]] },
+
+  { slug:"blanket", group:"investors", title:"Blanket portfolio loans", short:"One closing, up to 10 properties",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"A single loan secured by multiple investment properties, with one underwriting file and one closing instead of several. On a purchase, all properties must share the same seller.",
+    facts:[["Loan amount range","$75K to $5M"],["Maximum LTV","75%"],["Typical time to close","2 weeks"]] },
+
+  { slug:"no-ratio", group:"investors", title:"No-ratio and asset-based", short:"No DSCR minimum, no income docs",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"No-ratio removes the DSCR minimum and income verification entirely. Asset depletion lets liquid assets stand in for income, and piggyback and co-borrower structures are available.",
+    facts:[["DSCR minimum","None"],["Income verification","None"],["Entity vesting","Accepted"]] },
+
+  { slug:"mixed-use", group:"investors", title:"Mixed-use and small commercial", short:"Retail, office, warehouse, storage",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"Combined residential and commercial square footage with no unit maximum, plus retail, office, warehouse, self storage, and automotive. Owner-occupancy allowed on commercial.",
+    facts:[["Unit maximum","None on qualifying mixed-use"],["Owner occupancy","Allowed"],["Property types","5+ unit, condotel, manufactured"]] },
+
+  { slug:"foreign-national", group:"investors", title:"Foreign national programs", short:"For non-U.S.-citizen investors",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"Programs designed for non-U.S.-citizen investors, using verified U.S. assets and proof of lawful residence. Applies across qualifying DSCR and portfolio programs.",
+    facts:[["Assets","Verified U.S. assets"],["Documentation","Proof of lawful residence"],["Available on","DSCR and portfolio"]] },
+
+  /* ---------------- homebuyers: replace with your real consumer lineup ---------------- */
+  { slug:"first-time-buyer", group:"homebuyers", title:"Buying your first home", short:"What the process actually looks like",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"A plain walkthrough of pre-approval, offer, underwriting, and closing, with the paperwork you will be asked for at each step and roughly when.",
+    facts:[] },
+
+  { slug:"va", group:"homebuyers", title:"VA loans", short:"Zero down for eligible service members",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"Eligibility, the certificate of eligibility, the funding fee, and how VA financing compares to a conventional loan on the same house.",
+    facts:[] },
+
+  { slug:"down-payment-assistance", group:"homebuyers", title:"Down payment assistance", short:"California programs and who qualifies",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"The assistance programs available in California, income and purchase price limits, and how the second lien is structured and repaid.",
+    facts:[] },
+
+  { slug:"refinance", group:"homebuyers", title:"Refinancing", short:"Rate and term, cash-out, and when it pays",
+    length:"", mp4:null, vimeo:null, poster:null,
+    blurb:"How to tell whether a refinance is worth the closing costs, what cash-out does to your payment, and the break-even math in plain numbers.",
+    facts:[] }
+];
+
+/* ---------------- runtime ---------------- */
+function hasSource(v){ return !!(v.mp4 || v.vimeo); }
+
+var byId = {}; VIDEOS.forEach(function(v){ byId[v.slug] = v; });
+
+document.getElementById("navBook").href = BOOKING_URL;
+document.getElementById("closeBook").href = BOOKING_URL;
+document.getElementById("vBook").href = BOOKING_URL;
+
+function buildLibrary(){
+  var lib = document.getElementById("lib");
+  GROUPS.forEach(function(g){
+    var items = VIDEOS.filter(function(v){ return v.group === g.id; });
+    if(!items.length) return;
+    var h = document.createElement("p"); h.className = "lib-head"; h.textContent = g.head;
+    var s = document.createElement("p"); s.className = "lib-sub"; s.textContent = g.sub;
+    var ul = document.createElement("ul"); ul.className = "rows";
+    items.forEach(function(v){
+      var live = hasSource(v);
+      var li = document.createElement("li");
+      var b = document.createElement("button");
+      b.className = "row" + (live ? "" : " pending");
+      b.type = "button"; b.dataset.slug = v.slug;
+      b.innerHTML = '<span class="tick"></span><span><span class="title"></span><span class="sub"></span></span><span class="meta"></span>';
+      b.querySelector(".title").textContent = v.title;
+      b.querySelector(".sub").textContent = v.short;
+      var meta = b.querySelector(".meta");
+      meta.className = live ? "len" : "soon";
+      meta.textContent = live ? (v.length || "") : "Coming soon";
+      b.addEventListener("click", function(){ select(v.slug, true); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+    lib.appendChild(h); lib.appendChild(s); lib.appendChild(ul);
+  });
+}
+
+function fallback(){
+  return '<div class="empty"><strong>This video is not published yet</strong>' +
+         '<span>Call 707.800.6047 and we will walk you through the program directly.</span></div>';
+}
+
+function select(slug, push){
+  var v = byId[slug];
+  if(!v) return;
+
+  var frame = document.getElementById("frame");
+  frame.innerHTML = "";
+
+  if(v.mp4){
+    var el = document.createElement("video");
+    el.src = v.mp4;
+    el.controls = true;
+    el.playsInline = true;
+    el.preload = "metadata";
+    if(v.poster) el.poster = v.poster;
+    el.addEventListener("error", function(){ frame.innerHTML = fallback(); });
+    frame.appendChild(el);
+  } else if(v.vimeo){
+    var f = document.createElement("iframe");
+    f.src = "https://player.vimeo.com/video/" + v.vimeo + "?title=0&byline=0&portrait=0";
+    f.allow = "autoplay; fullscreen; picture-in-picture";
+    f.setAttribute("allowfullscreen","");
+    f.title = v.title;
+    frame.appendChild(f);
+  } else {
+    frame.innerHTML = fallback();
+  }
+
+  document.getElementById("vTitle").textContent = v.title;
+  document.getElementById("vBlurb").textContent = v.blurb;
+
+  var ul = document.getElementById("vFacts");
+  ul.innerHTML = "";
+  (v.facts || []).forEach(function(pair){
+    var li = document.createElement("li");
+    var k = document.createElement("span"); k.className = "k"; k.textContent = pair[0];
+    var val = document.createElement("span"); val.className = "v"; val.textContent = pair[1];
+    li.appendChild(k); li.appendChild(val); ul.appendChild(li);
+  });
+
+  document.querySelectorAll(".row").forEach(function(r){
+    r.setAttribute("aria-current", r.dataset.slug === slug ? "true" : "false");
+  });
+
+  document.title = v.title + " | Citizens Financial";
+
+  if(push){
+    try{ history.replaceState(null, "", "?v=" + slug); }catch(e){}
+    document.getElementById("stage").scrollIntoView({behavior:"smooth", block:"start"});
+  }
+}
+
+buildLibrary();
+
+var asked = null;
+try{ asked = new URLSearchParams(location.search).get("v"); }catch(e){}
+var start = (asked && byId[asked]) ? asked
+          : (VIDEOS.filter(function(v){ return v.featured; })[0] || VIDEOS[0]).slug;
+select(start, false);
+</script>
+</body>
+</html>
